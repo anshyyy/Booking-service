@@ -11,15 +11,15 @@ module.exports = {
       },
       flightId: {
         type: Sequelize.INTEGER,
-        allowNull:true
+        allowNull:false
       },
       userId: {
         type: Sequelize.INTEGER,
-        allowNull:true
+        allowNull:false
       },
       status: {
         type: Sequelize.ENUM,
-        allowNull:true,
+        allowNull:false,
         defaultValue:'InProcess',
         values:['InProcess','Booked','Cancelled'],
       },
