@@ -1,4 +1,4 @@
-const { PORT,DB_SYNC } = require('./config/serverConfig');
+const { PORT,DB_SYNC,FLIGHT_SERVICE_PATH } = require('./config/serverConfig');
 const ApiRoutes = require('./routes/index');
 const db = require('./models/index')
 const bodyParser = require('body-parser');
@@ -19,6 +19,7 @@ const setUpAndStartServer = () => {
         if(DB_SYNC==true){
              db.sequelize.sync({alter:true});
         }
+        //console.log(FLIGHT_SERVICE_PATH);
     })
 }
 
