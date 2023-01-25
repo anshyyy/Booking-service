@@ -28,7 +28,6 @@ class BookingController {
 
     createBooking = async (req, res) => {
         try {
-            console.log(req.body);
             const bookedFlight = await bookingService.createBooking(req.body);
             return res.status(StatusCodes.OK).json({
                 data: bookedFlight,
