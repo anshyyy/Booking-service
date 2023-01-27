@@ -9,4 +9,5 @@ module.exports = {
     EXCHANGE_NAME:process.env.EXCHANGE_NAME,
     REMINDER_BINDING_KEY:process.env.REMINDER_BINDING_KEY,
     MESSAGE_BROKER_URL:process.env.MESSAGE_BROKER_URL,
+    AUTH_SERVICE_PATH:process.env.AUTH_SERVICE_PATH
 }
